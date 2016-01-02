@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="pa.iscde.test.textext">
+      <item
+            class="pa.iscde.testextension.TestClass"
+            name="Test name">
+      </item>
+   </extension>
+   
+   <extension
+         id="pt.iscde.javadoc.annotations"
+         name="JavaDoc Annotations Extension"
+         point="pa.iscde.javadoc.annotations">
+         
+         <unnamedTag 
+         	class="pa.iscde.testextension.TagXXX">
+         </unnamedTag>
+         
+         <namedTag
+         	class="pa.iscde.testextension.TestAnot">
+         </namedTag>
+         
+         <customTag 
+         	class="pa.iscde.testextension.TagCustom">
+         </customTag>
+         
+         <customTag 
+         	class="pa.iscde.testextension.LinkTag">
+         </customTag>
+         
+         <customTag 
+         	class="pa.iscde.testextension.FinalTag">
+         </customTag>
+   </extension>
+</plugin>
