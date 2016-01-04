@@ -2,7 +2,7 @@ package pa.iscde.testextension;
 
 import java.awt.Color;
 
-import pa.iscde.javadoc.export.parser.JavaDocCustomTagI;
+import pa.iscde.javadoc.export.parser.JavaDocCustomTag;
 import pa.iscde.javadoc.export.style.AnnotationStyleI;
 import pa.iscde.javadoc.export.style.StyleToolBox;
 import pt.iscde.javadoc.annotations.mfane.JavaDocCustomAnnotationExtension;
@@ -10,8 +10,8 @@ import pt.iscde.javadoc.annotations.mfane.JavaDocCustomAnnotationExtension;
 public class FinalTag implements JavaDocCustomAnnotationExtension {
 
     @Override
-    public JavaDocCustomTagI getJavaDocCustomTag() {
-	return new JavaDocCustomTagI() {
+    public JavaDocCustomTag getJavaDocCustomTag() {
+	return new JavaDocCustomTag() {
 	    
 	    @Override
 	    public String getTagName() {

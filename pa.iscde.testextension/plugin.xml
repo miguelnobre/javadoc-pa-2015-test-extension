@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-   <extension
-         point="pa.iscde.test.textext">
-      <item
-            class="pa.iscde.testextension.TestClass"
-            name="Test name">
-      </item>
-   </extension>
    
    <extension
          id="pt.iscde.javadoc.annotations"
@@ -34,4 +27,49 @@
          	class="pa.iscde.testextension.FinalTag">
          </customTag>
    </extension>
+      <extension
+            point="pa.iscde.javadoc.renderers">
+         <render renderType="preVisit">
+               <fieldRender
+                     class="pa.iscde.testextension.JavaDocFieldRenderPreVisit">
+               </fieldRender>
+         </render>
+         <render renderType="preVisit">
+               <fieldRender
+                     class="pa.iscde.testextension.JavaDocNamedFieldRenderPreVisit" name="id">
+               </fieldRender>
+         </render>
+          <render renderType="postVisit">
+               <fieldRender
+                     class="pa.iscde.testextension.JavaDocFieldRenderPostVisit">
+               </fieldRender>
+         </render>
+        <render renderType="preVisit">
+	       <methodRender
+                     class="pa.iscde.testextension.JavaDocMethodRenderPreVisit">
+               </methodRender>
+               
+         </render>
+                                    <render renderType="postVisit">
+               <methodRender
+                     class="pa.iscde.testextension.JavaDocMethodRenderPostVisit">
+               </methodRender>
+          
+         </render>
+                                    <render renderType="postVisit">
+               <methodRender
+                     class="pa.iscde.testextension.JavaDocNamedMethodRenderPostVisit" name="toString">
+               </methodRender>
+          
+         </render>
+                                         <render renderType="postVisit">
+               <genericRender
+                     class="pa.iscde.testextension.JavaDocGenericRenderPostVisit">
+               </genericRender>
+          
+         </render>
+         
+
+         
+      </extension>
 </plugin>
