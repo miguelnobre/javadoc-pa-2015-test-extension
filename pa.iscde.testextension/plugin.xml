@@ -28,41 +28,57 @@
          </customTag>
    </extension>
       <extension
+            id="pt.iscde.javadoc.renderers"
+            name="JavaDoc Renderers Extension"
             point="pa.iscde.javadoc.renderers">
-         <render renderType="preVisit">
+         <render
+               name="JavaDocFieldRenderPreVisit"
+               renderType="preVisit">
                <fieldRender
                      class="pa.iscde.testextension.JavaDocFieldRenderPreVisit">
                </fieldRender>
          </render>
-         <render renderType="preVisit">
+         <render
+               name="JavaDocNamedFieldRenderPreVisit"
+               renderType="preVisit">
                <fieldRender
                      class="pa.iscde.testextension.JavaDocNamedFieldRenderPreVisit" name="id">
                </fieldRender>
          </render>
-          <render renderType="postVisit">
+          <render
+                name="JavaDocFieldRenderPostVisit"
+                renderType="postVisit">
                <fieldRender
                      class="pa.iscde.testextension.JavaDocFieldRenderPostVisit">
                </fieldRender>
          </render>
-        <render renderType="preVisit">
+        <render
+              name="JavaDocMethodRenderPreVisit"
+              renderType="preVisit">
 	       <methodRender
                      class="pa.iscde.testextension.JavaDocMethodRenderPreVisit">
                </methodRender>
                
          </render>
-                                    <render renderType="postVisit">
+                                    <render
+                                          name="JavaDocMethodRenderPostVisit"
+                                          renderType="postVisit">
                <methodRender
                      class="pa.iscde.testextension.JavaDocMethodRenderPostVisit">
                </methodRender>
           
          </render>
-                                    <render renderType="postVisit">
+                                    <render
+                                          name="JavaDocNamedMethodRenderPostVisit"
+                                          renderType="postVisit">
                <methodRender
                      class="pa.iscde.testextension.JavaDocNamedMethodRenderPostVisit" name="toString">
                </methodRender>
           
          </render>
-                                         <render renderType="postVisit">
+                                         <render
+                                               name="JavaDocGenericRenderPostVisit"
+                                               renderType="postVisit">
                <genericRender
                      class="pa.iscde.testextension.JavaDocGenericRenderPostVisit">
                </genericRender>
