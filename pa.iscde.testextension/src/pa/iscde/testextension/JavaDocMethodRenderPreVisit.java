@@ -1,13 +1,13 @@
 package pa.iscde.testextension;
 
-import org.eclipse.jdt.core.dom.FieldDeclaration;
+import org.eclipse.jdt.core.dom.MethodDeclaration;
 
 import pa.iscde.javadoc.export.render.JavaDocMethodRender;
 
 public class JavaDocMethodRenderPreVisit implements JavaDocMethodRender {
 
     @Override
-    public boolean render(FieldDeclaration field, StringBuilder sb) {
+    public boolean render(MethodDeclaration field, StringBuilder sb) {
 	// TODO Auto-generated method stub
 	return false;
     }
