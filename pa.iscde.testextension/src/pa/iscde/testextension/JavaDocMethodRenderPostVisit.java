@@ -8,12 +8,10 @@ public class JavaDocMethodRenderPostVisit implements JavaDocMethodRender {
 
     @Override
     public boolean render(MethodDeclaration method, StringBuilder sb) {
-	sb.append("<br>");
-	sb.append("<hr>");
-	sb.append("Extension:").append(this.getClass().getSimpleName()).append("<br>");
-	sb.append("MethodName:").append(method.getName().getFullyQualifiedName() ).append("<br>");
-	sb.append("<hr>");
-	sb.append("<br>");
+	sb.append("<hr>").append('\n');
+	sb.append("Extension:").append(this.getClass().getSimpleName()).append('\n');
+	sb.append("MethodName:").append(method.getName().getFullyQualifiedName() ).append('\n');
+	sb.append("<hr>").append('\n');
 	return false;
     }
 

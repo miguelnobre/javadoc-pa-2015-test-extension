@@ -8,7 +8,6 @@ public class JavaDocGenericRenderPostVisit implements JavaDocGenericRender {
 
     @Override
     public boolean render(ASTNode node, StringBuilder sb) {
-	// TODO Auto-generated method stub
 	return false;
     }
 

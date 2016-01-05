@@ -9,12 +9,10 @@ public class JavaDocFieldRenderPreVisit implements JavaDocFieldRender {
 
     @Override
     public boolean render(FieldDeclaration field, StringBuilder sb) {
-	sb.append("<br>");
-	sb.append("<hr>");
-	sb.append("Extension:").append(this.getClass().getSimpleName()).append("<br>");
-	sb.append("FieldName:").append( ((VariableDeclarationFragment)field.fragments().get(0)).getName().getFullyQualifiedName()).append("<br>");
-	sb.append("<hr>");
-	sb.append("<br>");
+	sb.append("<hr>").append('\n');
+	sb.append("Extension:").append(this.getClass().getSimpleName()).append('\n');
+	sb.append("FieldName:").append( ((VariableDeclarationFragment)field.fragments().get(0)).getName().getFullyQualifiedName()).append('\n');
+	sb.append("<hr>").append('\n');
 	return false;
     }
 
