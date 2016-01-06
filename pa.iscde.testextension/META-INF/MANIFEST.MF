@@ -4,5 +4,10 @@ Bundle-Name: Testextension
 Bundle-SymbolicName: pa.iscde.testextension;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Require-Bundle: pa.iscde.javadoc
-Import-Package: org.eclipse.jdt.core.dom
+Require-Bundle: pa.iscde.javadoc,
+ org.eclipse.osgi,
+ pt.iscte.pidesco.javaeditor
+Import-Package: org.eclipse.jdt.core,
+ org.eclipse.jdt.core.dom
+Bundle-Activator: pa.iscde.testextension.JavaDocTestActivador
+Bundle-ActivationPolicy: lazy
